@@ -72,10 +72,3 @@ func (d *Driver) ReadAll(collection string) ([]string, error) {
 	// unmarhsal the read files as a comma delimeted byte array
 	return records, nil
 }
-
-// ReadRange takes a slice of resource names as an argument and fetches each
-// record, ignoring resources that do not exist. This is returned as
-// map[resource]record
-func (d *Driver) ReadRange(collection string, resources []string) (map[string]string, error) {
-	// ...
-}

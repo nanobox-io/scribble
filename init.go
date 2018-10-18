@@ -9,6 +9,9 @@ import (
 	"github.com/jcelliott/lumber"
 )
 
+// Version is the current version of the project
+const Version = "1.1"
+
 // New creates a new scribble database at the desired directory location, and
 // returns a *Driver to then use for interacting with the database
 func New(dir string, options *Options) (*Driver, error) {

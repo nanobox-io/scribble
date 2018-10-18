@@ -6,9 +6,6 @@ import (
 	"sync"
 )
 
-// Version is the current version of the project
-const Version = "1.1"
-
 // stat checks for dir, if path isn't a directory check to see if it's a file
 func stat(path string) (fi os.FileInfo, err error) {
 	if fi, err = os.Stat(path); os.IsNotExist(err) {
